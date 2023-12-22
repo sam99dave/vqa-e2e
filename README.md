@@ -12,7 +12,7 @@ Running docker interactive, **//** is important to turn off GitBash's automatic 
 `docker run -it --rm vqa-e2e //bin/bash`
 
 Streamlit App
->> localhost:8501
+> localhost:8501
 
 FastAPI
->> localhost:8000/docs
+> localhost:8000/docs
