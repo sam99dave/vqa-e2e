@@ -1,14 +1,12 @@
-from transformers import DonutProcessor, VisionEncoderDecoderModel
 from transformers import pipeline
 import torch
-import re
 
 
 class VQAModel:
     def __init__(self, model_name: str = "stevhliu/my_awesome_wnut_model"):
         self.model_name = model_name
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        self.my_pipeline = pipeline("ner", model = self.model_name)
+        self.my_pipeline = pipeline("ner", model=self.model_name)
         # if pipeline:
         #     self.pipeline = pipeline("ner", model = model_name)
         # else:
@@ -16,7 +14,7 @@ class VQAModel:
 
     def predict(self, input):
         output = self.my_pipeline(input)
-        print(f'output: {output}')
+        print(f"output: {output}")
         return output
 
     # def get_model(self):
