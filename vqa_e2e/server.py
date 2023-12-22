@@ -27,13 +27,6 @@ def convert_np_float32_to_float(obj):
 async def root():
     return {"message": "Hello World"}
 
-# @app.get("/predict")
-# def predict(self, input: UserRequest) -> dict:
-#     img = Image.open(io.BytesIO(input.input_img))
-#     res = _model.predict(img, input.input_question)
-#     print(f'res: {res}')
-#     return res
-
 @app.post("/predict/")
 def predict(input: UserRequest):
     print(f'input: {input.input_question}')

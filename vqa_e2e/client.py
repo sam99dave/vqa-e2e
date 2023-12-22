@@ -5,7 +5,8 @@ import io
 import json
 import base64
 
-URL = 'http://127.0.0.1:8000/predict'
+# URL = 'http://127.0.0.1:8000/predict'
+URL = 'http://localhost:8000/predict'
 
 def main():
     st.title("Image Upload and Processing")
