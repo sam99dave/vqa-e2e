@@ -1,2 +1,6 @@
 *.lock
 vqa_e2e/__pycache__
+tests/__pycache__
+*.
+*.tar
+*.vs
